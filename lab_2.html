@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<title>Lab#2</title>
+<head>
+<style>
+
+.center {
+    text-align: center !important;
+}
+#full {
+	background-color:BLACK;
+	width: 100%;
+	
+	text-align: center;
+	
+	
+	
+}
+#images > div {
+
+display:none;
+
+}
+
+#images div:target {
+    display: block;
+}
+figcaption {
+
+	color: #ffffff;
+	font-weigt: bold;
+	font-size: 22px;
+
+}
+</style>
+</head>
+<body>
+
+
+<div id=full >
+<h1 style ="font-style:ITALIC;color:GREY;">Image Browser</h1>
+
+<a href="#img1"><img src="images/1.jpg" width=10%></a>
+<a href="#img2"><img src="images/2.JPG" width=10%></a>
+<a href="#img3"><img src="images/3.JPG" width=10%></a>
+<a href="#img4"><img src="images/4.jpg" height="85" width=10%></a>
+<a href="#img5"><img src="images/5.jpeg" width=10%></a>
+
+
+<div id=images>
+<div id="img1">
+    <figure >
+        <img src="images/1.jpg" width="60%">
+        <figcaption>Image 1</figcaption>
+    </figure>
+    <a href="#img5"><button>Previous</button></a>
+    <a href="#img2"><button>Next</button></a>
+</div>
+
+<div id="img2">
+    <figure >
+        <img src="images/2.JPG" width="60%">
+        <figcaption>Image 2</figcaption>
+    </figure>
+    <a href="#img1"><button>Previous</button></a>
+    <a href="#img3"><button>Next</button></a>
+</div>
+
+<div id="img3">
+    <figure >
+        <img src="images/3.JPG" width="60%">
+        <figcaption>Image 3</figcaption>
+    </figure>
+    <a href="#img2"><button>Previous</button></a>
+    <a href="#img4"><button>Next</button></a>
+</div>
+<div id="img4">
+    <figure >
+        <img src="images/4.jpg" width="60%">
+        <figcaption>Image 4</figcaption>
+    </figure>
+    <a href="#img3"><button>Previous</button></a>
+    <a href="#img5"><button>Next</button></a>
+</div>
+<div id="img5">
+    <figure >
+        <img src="images/5.jpeg" width="60%">
+        <figcaption>Image 5</figcaption>
+    </figure>
+    <a href="#img4"><button>Previous</button></a>
+    <a href="#img1"><button>Next</button></a>
+</div>
+
+
+</div>
+
+</div>
+
+</body>
+</html>
